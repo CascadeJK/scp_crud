@@ -1,0 +1,379 @@
+/* calculte all sizes, hard and percentages values together */
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* Homepage image styling */
+#homepage-image{
+	background: url(../images/background.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color:#000000;
+	padding-bottom:6%;
+	text-align:center;
+	background-position: center;
+}
+
+body {
+    font-family: "Baumans", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0; /* This makes the website go all the way to the side */
+    color:white;
+    width:100%;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+/* Start of navbar styling */
+
+/* Start of navbar styling */
+
+.logo{
+    width:20%;
+}
+
+.navbar-nav {
+    width:70%;
+    z-index: 1;
+}
+
+.nav-link{
+    color: #ffffff;
+    display: block;
+    font-size:1.3vw;
+    padding:1.3% 2.5%;
+    margin-right:2% ;
+}
+
+  
+.nav-link:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.nav-link.active {
+    background-color: #DC143C;
+    color: #ffffff;
+}
+
+/* End of nabar styling */
+
+/* container styles */
+.container{
+    margin-left:14%;
+    margin-right: 0%;
+    width:50%;
+    z-index: 0;
+}
+
+/* classified styles */
+.classified {
+    margin: 70% 10% 10% 25%;
+    text-align: center;
+    width:50%;
+}
+/* warning styles */
+.warning {
+    margin: 20% 0 10% 25%;
+    text-align: center;
+    width:50%;
+}
+ 
+
+
+/* These style all of the text */
+/* Manually sized the text to make it responsive */
+h1{
+    color: #DC143C;
+    font-size: 5vw;
+}
+
+h2{
+    font-size: 2vw;
+}
+
+h4{
+    font-size:4vw;
+    color: #DC143C;
+}
+
+p{
+    font-size: 1.1vw;
+    margin-bottom: 0%;
+}
+
+li{
+    
+    font-size: 1.1vw;
+}
+
+span{
+    color:#DC143C;
+}
+
+/* End of text styling */
+
+
+/* The boxes styles where the text is next to the images on the homepage */
+.box{
+    width:90%;
+    margin-top: 11%;
+}
+
+.box-two{
+    width:90%;
+    margin: 8% 0 0 2%;
+}
+
+.box-three{
+    width:65%;
+    margin: 9% 0 0 32%;
+}
+
+.box-four{
+    width:85%;
+    margin: 13% 0 0 2%;
+}
+
+.box-five{
+    width:65%;
+    margin: 10% 0 0 32%;
+}
+
+.box-six{
+    width:90%;
+    margin: 8% 0 0 2%;
+}
+
+.box-seven{
+    width:65%;
+    margin: 12% 0 0 32%;
+}
+
+.box-eight{
+    width:85%;
+    margin: 13% 0 0 2%;
+}
+
+.box-nine{
+    width:65%;
+    margin: 12% 0 0 32%;
+}
+
+.box-ten{
+    width:85%;
+    margin: 13% 0 0 2%;
+}
+/* End of boxes */
+
+
+
+/* Start of homepage images hover/overlay css */
+.images{
+    transition: transform .2s;/* How long it takes to zoom in and makes it smoother */
+}
+
+.images:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: white; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 1.5vw;
+    padding: 20px;
+    text-align: center;
+}
+
+.images:hover .overlay {
+    opacity: 1;/* Makes the overlay visable */
+}
+
+/* End of homepage images hover/overlay css */
+
+
+/* Adds some space above the footer */
+footer{
+    margin-top: 10%;
+}
+
+/* containment styles */
+.containment{
+    width:45%;
+    margin-left: 2%;
+}
+
+/* cover-image styles */
+.cover-image{
+    width:50%;
+    float:right;
+}
+.cover-image img{
+    width: 96%;
+}
+
+/* holder styles */
+.holder{
+    width:50%;
+    margin:2% 0 0% 2%;
+}
+
+/* description styles*/
+.description{
+    margin:10% 0 0 2%;
+    width:95%;
+}
+
+
+/* button style */
+.buttons{
+    margin-top: 2%;
+}
+
+.back{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.form {
+    width:80%;
+    margin:auto;
+}
+
+label{
+    font-size:1.3vw;
+}
+
+
+@media (max-width:1245px){
+    p{
+        font-size: 1.2vw;
+    }
+  
+}
+
+
+@media (max-width:940px){
+    h1{
+        font-size:6vw;
+    }
+    
+    h2{
+        font-size: 2.4vw;
+    }
+    
+    h4{
+        font-size:5vw;
+    }
+    
+    .nav-link{
+        font-size:1.5vw;
+    }
+    
+    p{
+        font-size: 1.4vw;
+    }
+}
+
+@media (max-width:730px){
+    h1{
+        font-size:6.6vw;
+    }
+    
+    h2{
+        font-size: 2.5vw;
+    }
+    
+    h4{
+        font-size:5vw;
+    }
+    
+    .nav-link{
+        font-size:1.5vw;
+    }
+    
+    label{
+        font-size:3vw;
+    }
+    
+    p{
+        font-size: 1.6vw;
+    }
+    
+      /* The boxes styles where the text is next to the images on the homepage */
+    .box{
+        width:80%;
+        margin: 11% 2% 0 20%;
+    }
+    
+    .box-two{
+        width:67%;
+        margin: 8% 0 0 2%;
+    }
+    
+    
+    .box-six{
+        width:67%;
+        margin: 8% 0 0 2%;
+    }
+    
+    
+    .box-eight{
+        width:67%;
+        margin: 13% 0 0 2%;
+    }
+    
+    .box-nine{
+        width:65%;
+        margin: 12% 0 0 32%;
+    }
+    
+    .box-ten{
+        width:70%;
+        margin: 13% 0 0 2%;
+    }
+}
+
+@media (max-width:530px){
+    h1{
+        font-size:7vw;
+    }
+    
+    h2{
+        font-size: 2.5vw;
+    }
+    
+    h4{
+        font-size:5vw;
+    }
+    
+    .nav-link{
+        font-size:2vw;
+    }
+    
+    label{
+        font-size:3vw;
+    }
+    
+    p{
+        font-size: 2vw;
+    }
+    
+    .box-four{
+        width:67%;
+        margin: 13% 0 0 2%;
+    }
+    
+}
+
